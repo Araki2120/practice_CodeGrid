@@ -1,3 +1,32 @@
 //各ファイルは必ず登録済みの変数を最初に読み込みます
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url(../images/top-book.png), url(/images/top-background.png);
+    background-size: contain;
+    background-size: clamp(800px, 100vw, 1000px) auto, auto 100vh;
+    background-position: center center;
+    background-repeat: no-repeat, repeat-x;
+}
+
+.header-title {
+    display: block;
+    max-width: 150px;
+    margin-top: 110px;
+    margin-bottom: 16px;
+}
+
+.header-list {
+    display: flex;
+    column-gap: 48px;
+}
+
+.header-item {
+    display: block;
+    max-width: 30px;
+}
